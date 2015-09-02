@@ -128,7 +128,7 @@
 		25F016111B96C72200F24E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25F016171B96CB5100F24E51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		25F0163A1B96DAA800F24E51 /* VeraText2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeraText2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25F0163B1B96DAA900F24E51 /* VeraText2Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = VeraText2Info.plist; path = /Users/myke/Source/VeraText/VeraText/VeraText2Info.plist; sourceTree = "<absolute>"; };
+		25F0163B1B96DAA900F24E51 /* VeraText2Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = VeraText2Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -659,7 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = VeraText2Info.plist;
+				INFOPLIST_FILE = VeraText/VeraText2Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -675,7 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = VeraText2Info.plist;
+				INFOPLIST_FILE = VeraText/VeraText2Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",

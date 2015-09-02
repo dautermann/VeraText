@@ -16,7 +16,7 @@ Here's the problem statement; expectation is it should take 1ish days to do it :
 
 ## And here's how to use it:
 
-1. Open the project in Xcode (I used Xcode 7)
+1. Open the project in Xcode (I used Xcode 7, but I just did a quick check in Xcode 6.4 and it seems to work as well).
 
 2. Select the "Everything" target from the Build Scheme.  Build it.
 
@@ -55,6 +55,8 @@ Here's the problem statement; expectation is it should take 1ish days to do it :
 7. Save your file.  When you view the contents, they will be encrypted.  They weren't encrypted via my NSString swizzling, but instead via the NSData swizzling.
 
 8. And you can use the VeraDecrypt tool to view the contents.
+
+note:  if anything gets messed up with the "optool", trash the app and rebuild everything (that's why we are doing our TextEdit modification on a copy of the app).
 
 ## Will this work on other apps?
 
