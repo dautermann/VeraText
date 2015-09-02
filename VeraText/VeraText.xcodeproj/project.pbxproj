@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				25F0163D1B96DADE00F24E51 /* PBXTargetDependency */,
 				25F016221B96CEA400F24E51 /* PBXTargetDependency */,
 				25F016241B96CEA400F24E51 /* PBXTargetDependency */,
 				25F016261B96CEA400F24E51 /* PBXTargetDependency */,
@@ -37,7 +38,12 @@
 		25F0160A1B96C18700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
 		25F016121B96C72200F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016111B96C72200F24E51 /* main.m */; };
 		25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
-		25F016181B96CB5100F24E51 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 25F016171B96CB5100F24E51 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		25F0162B1B96DAA800F24E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015DF1B964F3400F24E51 /* ViewController.m */; };
+		25F0162C1B96DAA800F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015DC1B964F3400F24E51 /* main.m */; };
+		25F0162E1B96DAA800F24E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015D91B964F3400F24E51 /* AppDelegate.m */; };
+		25F0162F1B96DAA800F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F016331B96DAA800F24E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E11B964F3400F24E51 /* Assets.xcassets */; };
+		25F016341B96DAA800F24E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E31B964F3400F24E51 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 25F0160E1B96C72200F24E51;
 			remoteInfo = VeraDecrypt;
+		};
+		25F0163C1B96DADE00F24E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F015CD1B964F3300F24E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F016271B96DAA800F24E51;
+			remoteInfo = VeraText2;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,6 +127,8 @@
 		25F0160F1B96C72200F24E51 /* VeraDecrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VeraDecrypt; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F016111B96C72200F24E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25F016171B96CB5100F24E51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25F0163A1B96DAA800F24E51 /* VeraText2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeraText2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F0163B1B96DAA900F24E51 /* VeraText2Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = VeraText2Info.plist; path = /Users/myke/Source/VeraText/VeraText/VeraText2Info.plist; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +148,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		25F0160C1B96C72200F24E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F016301B96DAA800F24E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,6 +181,7 @@
 				25F015D51B964F3400F24E51 /* VeraText.app */,
 				25F015F11B964F7900F24E51 /* VeraTextLib.framework */,
 				25F0160F1B96C72200F24E51 /* VeraDecrypt */,
+				25F0163A1B96DAA800F24E51 /* VeraText2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +198,7 @@
 				25F015E11B964F3400F24E51 /* Assets.xcassets */,
 				25F015E31B964F3400F24E51 /* Main.storyboard */,
 				25F015E61B964F3400F24E51 /* Info.plist */,
+				25F0163B1B96DAA900F24E51 /* VeraText2Info.plist */,
 				25F015DB1B964F3400F24E51 /* Supporting Files */,
 			);
 			path = VeraText;
@@ -276,6 +300,23 @@
 			productReference = 25F0160F1B96C72200F24E51 /* VeraDecrypt */;
 			productType = "com.apple.product-type.tool";
 		};
+		25F016271B96DAA800F24E51 /* VeraText2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F016371B96DAA800F24E51 /* Build configuration list for PBXNativeTarget "VeraText2" */;
+			buildPhases = (
+				25F0162A1B96DAA800F24E51 /* Sources */,
+				25F016301B96DAA800F24E51 /* Frameworks */,
+				25F016321B96DAA800F24E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeraText2;
+			productName = VeraText;
+			productReference = 25F0163A1B96DAA800F24E51 /* VeraText2.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,6 +356,7 @@
 				25F015D41B964F3400F24E51 /* VeraText */,
 				25F015F01B964F7900F24E51 /* VeraTextLib */,
 				25F0160E1B96C72200F24E51 /* VeraDecrypt */,
+				25F016271B96DAA800F24E51 /* VeraText2 */,
 				25F016191B96CDDA00F24E51 /* Everything */,
 			);
 		};
@@ -337,6 +379,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25F016321B96DAA800F24E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F016331B96DAA800F24E51 /* Assets.xcassets in Resources */,
+				25F016341B96DAA800F24E51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -346,7 +397,6 @@
 			files = (
 				25F015E01B964F3400F24E51 /* ViewController.m in Sources */,
 				25F015DD1B964F3400F24E51 /* main.m in Sources */,
-				25F016181B96CB5100F24E51 /* README.md in Sources */,
 				25F015DA1B964F3400F24E51 /* AppDelegate.m in Sources */,
 				25F016091B96C18300F24E51 /* EncryptDecrypt.m in Sources */,
 			);
@@ -367,6 +417,17 @@
 			files = (
 				25F016121B96C72200F24E51 /* main.m in Sources */,
 				25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F0162A1B96DAA800F24E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F0162B1B96DAA800F24E51 /* ViewController.m in Sources */,
+				25F0162C1B96DAA800F24E51 /* main.m in Sources */,
+				25F0162E1B96DAA800F24E51 /* AppDelegate.m in Sources */,
+				25F0162F1B96DAA800F24E51 /* EncryptDecrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +453,11 @@
 			isa = PBXTargetDependency;
 			target = 25F0160E1B96C72200F24E51 /* VeraDecrypt */;
 			targetProxy = 25F016251B96CEA400F24E51 /* PBXContainerItemProxy */;
+		};
+		25F0163D1B96DADE00F24E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F016271B96DAA800F24E51 /* VeraText2 */;
+			targetProxy = 25F0163C1B96DADE00F24E51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,6 +654,38 @@
 			};
 			name = Release;
 		};
+		25F016381B96DAA800F24E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VeraText2Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myke.VeraText2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25F016391B96DAA800F24E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VeraText2Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myke.VeraText2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,6 +731,15 @@
 				25F0161C1B96CDDA00F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		25F016371B96DAA800F24E51 /* Build configuration list for PBXNativeTarget "VeraText2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F016381B96DAA800F24E51 /* Debug */,
+				25F016391B96DAA800F24E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

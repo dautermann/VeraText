@@ -26,3 +26,17 @@ And here's how to use it:
 
 5. Now run the VeraDecrypt tool from the command line.  
 
+*** Let's do something more involved ***
+
+1. Recursively clone the "optool" repo via "`git clone --recursive git@github.com:alexzielenski/optool.git`" and build the "`"optool`" command line tool.
+
+2. VeraText2.app *does not* link against VeraTextLib.  If you run that and save a file, you'll see the text that's saved is the unencrypted text.
+
+3. Copy the VeraTextLib dylib into the "`MacOS`" folder hiding inside VeraText2's application bundle.
+
+4. To inject the VeraTextLib dylib, go to Terminal and do this command:  "`/PATH/TO/optool install -c load -p "@executable_path/VeraTextLib.framework/VeraTextLib" -t /FULL/PATH/TO/VeraText2.app/Contents/MacOS/VeraText2`"
+
+5. Now, when you launch VeraText2.app and save some text, you'll see the saved text is encrypted.
+
+
+
