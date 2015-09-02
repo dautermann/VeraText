@@ -56,3 +56,12 @@ Here's the problem statement; expectation is it should take 1ish days to do it :
 
 8. And you can use the VeraDecrypt tool to view the contents.
 
+## Will this work on other apps?
+
+1. Most definitely.  However, I lucked out in that TextEdit was using NSData's writeToURL method to write data to the disk.  Who knows what other apps use, or what methods we'd have to swizzle.
+
+2. To really do this right, I might need to dive deeper (e.g. patching the ultimate "write" function?).  
+
+3. Also, we need to recodesign all apps that we modify, so that's a significant issue going forward.
+
+
