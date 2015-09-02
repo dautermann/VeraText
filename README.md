@@ -14,7 +14,7 @@ Here's the problem statement; expectation is it should take 1ish days to do it :
 5. Please list all external references/code/libs that helped you on the way :)
 6. Please submit all the code as a zip/tarball (with build/run instructions if needed)
 
-And here's how to use it:
+## And here's how to use it:
 
 1. Open the project in Xcode (I used Xcode 7)
 
@@ -26,7 +26,7 @@ And here's how to use it:
 
 5. Now run the VeraDecrypt tool from the command line.  
 
-**Let's do something more involved **
+## Let's do something more involved 
 
 1. Recursively clone the "optool" repo via
 
@@ -44,7 +44,7 @@ and build the "`"optool`" command line tool.
 
 5. Now, when you launch VeraText2.app and save some text, you'll see the saved text is encrypted.
 
-**Now let's get this to work on apps I did not build**
+## Now let's get this to work on apps I did not build
 
 1. Make a copy of TextEdit.app. For myself, I copied it into the "`/tmp`" directory.
 
