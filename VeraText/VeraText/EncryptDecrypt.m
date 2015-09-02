@@ -27,4 +27,21 @@
     return output;
 }
 
++(NSData *) encryptDecryptThisData:(NSData *)input
+{
+    char key[] = {'K'};
+    uint8_t * bytePtr = (uint8_t  * )[input bytes];
+    Byte *output = (Byte*)malloc(input.length);
+    
+    for(int i = 0; i < input.length; i++) {
+        char c = bytePtr[i];
+        c ^= key[i % sizeof(key)/sizeof(char)];
+        output[i] = c;
+    }
+    
+    NSData *outputData = [[NSData alloc] initWithBytes:output length:input.length];
+    return outputData;
+}
+
+
 @end

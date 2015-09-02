@@ -26,17 +26,43 @@ And here's how to use it:
 
 5. Now run the VeraDecrypt tool from the command line.  
 
-*** Let's do something more involved ***
+**Let's do something more involved **
 
-1. Recursively clone the "optool" repo via "`git clone --recursive git@github.com:alexzielenski/optool.git`" and build the "`"optool`" command line tool.
+1. Recursively clone the "optool" repo via
+
+"`git clone --recursive git@github.com:alexzielenski/optool.git`" 
+
+and build the "`"optool`" command line tool.
 
 2. VeraText2.app *does not* link against VeraTextLib.  If you run that and save a file, you'll see the text that's saved is the unencrypted text.
 
 3. Copy the VeraTextLib dylib into the "`MacOS`" folder hiding inside VeraText2's application bundle.
 
-4. To inject the VeraTextLib dylib, go to Terminal and do this command:  "`/PATH/TO/optool install -c load -p "@executable_path/VeraTextLib.framework/VeraTextLib" -t /FULL/PATH/TO/VeraText2.app/Contents/MacOS/VeraText2`"
+4. To inject the VeraTextLib dylib, go to Terminal and do this command:  
+
+"`/PATH/TO/optool install -c load -p "@executable_path/VeraTextLib.framework/VeraTextLib" -t /FULL/PATH/TO/VeraText2.app/Contents/MacOS/VeraText2`"
 
 5. Now, when you launch VeraText2.app and save some text, you'll see the saved text is encrypted.
 
+**Now let's get this to work on apps I did not build**
 
+1. Make a copy of TextEdit.app. For myself, I copied it into the "`/tmp`" directory.
+
+2. Copy the VeraTextLib dylib into the "`MacOS`" folder hiding inside TextEdit's application bundle.
+
+3. Inject the VeraTextLib dylib via this command:
+
+"`/PATH/TO/optool install -c load -p "@executable_path/VeraTextLib.framework/VeraTextLib" -t /private/tmp/TextEdit.app/Contents/MacOS/TextEdit`"
+
+4. For your modified TextEdit to run, you need to re-codesign it.  I did it via:
+
+"`codesign --force -s "Developer ID Application: Michael Dautermann" /private/tmp/TextEdit.app`"
+
+5. Now launch TextEdit and create a new document.  Type in some text.
+
+6. Under the Format menu, choose "Make Plain Text" (or command-T).  This allows us to save .txt files.
+
+7. Save your file.  When you view the contents, they will be encrypted.  They weren't encrypted via my NSString swizzling, but instead via the NSData swizzling.
+
+8. And you can use the VeraDecrypt tool to view the contents.
 

@@ -15,13 +15,7 @@
 - (BOOL)swizzle_writeToURL:(NSURL *)url atomically:(BOOL)useAuxiliaryFile encoding:(NSStringEncoding)enc error:(NSError **)error;
 {
     NSString *encryptedText = [EncryptDecrypt encryptDecryptThis:self];
-#if TESTING
 
-    NSString *newText = [EncryptDecrypt encryptDecryptThis:encryptedText];
-    
-    NSLog(@"writing out %ld %ld %@", [encryptedText length], [newText length], newText);
-    
-#endif
     // Call original method with the new encrypted string
     BOOL success = [encryptedText swizzle_writeToURL:url atomically:useAuxiliaryFile encoding:enc error:error];
     
@@ -53,12 +47,8 @@
 
 - (BOOL)swizzle_writeToURL:(NSURL *)url options:(NSDataWritingOptions)writeOptionsMask error:(NSError **)errorPtr
 {
-    NSLog(@"writing out something");
-
-    // this should appear in the RTF file written out
-    NSString * something = @"some placeholder text to prove that swizzling the method actually worked";
+    NSData * replaced = [EncryptDecrypt encryptDecryptThisData:self];
     
-    NSData * replaced = [something dataUsingEncoding:NSUTF8StringEncoding];
     // Call original method with new NSData
     BOOL success = [replaced swizzle_writeToURL:url options:writeOptionsMask error:errorPtr];
 

@@ -10,12 +10,8 @@
 
 @interface EncryptDecrypt : NSObject
 
-#if DUH
-+ (NSString *) decryptThis: (NSString *)encryptedString;
-
-+ (NSString *) encryptThis: (NSString *)originalString;
-#else
 + (NSString *) encryptDecryptThis:(NSString *)input;
 
-#endif
++ (NSData *) encryptDecryptThisData:(NSData *)input;
+
 @end
