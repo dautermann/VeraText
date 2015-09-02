@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		25F016191B96CDDA00F24E51 /* Everything */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 25F0161A1B96CDDA00F24E51 /* Build configuration list for PBXAggregateTarget "Everything" */;
+			buildPhases = (
+			);
+			dependencies = (
+				25F016221B96CEA400F24E51 /* PBXTargetDependency */,
+				25F016241B96CEA400F24E51 /* PBXTargetDependency */,
+				25F016261B96CEA400F24E51 /* PBXTargetDependency */,
+			);
+			name = Everything;
+			productName = Everything;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		25F015DA1B964F3400F24E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015D91B964F3400F24E51 /* AppDelegate.m */; };
 		25F015DD1B964F3400F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015DC1B964F3400F24E51 /* main.m */; };
@@ -31,6 +47,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 25F015F01B964F7900F24E51;
 			remoteInfo = VeraTextLib;
+		};
+		25F016211B96CEA400F24E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F015CD1B964F3300F24E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F015D41B964F3400F24E51;
+			remoteInfo = VeraText;
+		};
+		25F016231B96CEA400F24E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F015CD1B964F3300F24E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F015F01B964F7900F24E51;
+			remoteInfo = VeraTextLib;
+		};
+		25F016251B96CEA400F24E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F015CD1B964F3300F24E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F0160E1B96C72200F24E51;
+			remoteInfo = VeraDecrypt;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -257,6 +294,9 @@
 					25F0160E1B96C72200F24E51 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					25F016191B96CDDA00F24E51 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = 25F015D01B964F3300F24E51 /* Build configuration list for PBXProject "VeraText" */;
@@ -275,6 +315,7 @@
 				25F015D41B964F3400F24E51 /* VeraText */,
 				25F015F01B964F7900F24E51 /* VeraTextLib */,
 				25F0160E1B96C72200F24E51 /* VeraDecrypt */,
+				25F016191B96CDDA00F24E51 /* Everything */,
 			);
 		};
 /* End PBXProject section */
@@ -336,6 +377,21 @@
 			isa = PBXTargetDependency;
 			target = 25F015F01B964F7900F24E51 /* VeraTextLib */;
 			targetProxy = 25F015F61B964F7900F24E51 /* PBXContainerItemProxy */;
+		};
+		25F016221B96CEA400F24E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F015D41B964F3400F24E51 /* VeraText */;
+			targetProxy = 25F016211B96CEA400F24E51 /* PBXContainerItemProxy */;
+		};
+		25F016241B96CEA400F24E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F015F01B964F7900F24E51 /* VeraTextLib */;
+			targetProxy = 25F016231B96CEA400F24E51 /* PBXContainerItemProxy */;
+		};
+		25F016261B96CEA400F24E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F0160E1B96C72200F24E51 /* VeraDecrypt */;
+			targetProxy = 25F016251B96CEA400F24E51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +574,20 @@
 			};
 			name = Release;
 		};
+		25F0161B1B96CDDA00F24E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25F0161C1B96CDDA00F24E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +623,14 @@
 			buildConfigurations = (
 				25F016141B96C72200F24E51 /* Debug */,
 				25F016151B96C72200F24E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25F0161A1B96CDDA00F24E51 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F0161B1B96CDDA00F24E51 /* Debug */,
+				25F0161C1B96CDDA00F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
