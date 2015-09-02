@@ -28,7 +28,11 @@
     NSSavePanel *panel = [NSSavePanel savePanel];
     
     // set a new file name
+#if FOR_NSDATA
     [panel setNameFieldStringValue:@"VeraText.rtf"];
+#else
+    [panel setNameFieldStringValue:@"VeraText.txt"];
+#endif
     
     // display the panel
     [panel beginWithCompletionHandler:^(NSInteger result) {
@@ -52,9 +56,14 @@
     } else {
         NSError *error;
         BOOL success;
+#if FOR_NSDATA
         NSData *rtfFromTextView = [textView RTFFromRange:NSMakeRange(0, textView.textStorage.length)];
         
         success = [rtfFromTextView writeToURL:textURL options:NSDataWritingAtomic error:&error];
+#else
+        NSString *stringFromTextView = [textView string];
+        success = [stringFromTextView writeToURL:textURL atomically:YES encoding:NSUTF8StringEncoding error:&error];
+#endif
         if(!success)
         {
             NSLog(@"error in writeToURL:atomically:encoding:error: - %@", [error localizedDescription]);

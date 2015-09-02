@@ -13,10 +13,15 @@
 		25F015E21B964F3400F24E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E11B964F3400F24E51 /* Assets.xcassets */; };
 		25F015E51B964F3400F24E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E31B964F3400F24E51 /* Main.storyboard */; };
 		25F015F41B964F7900F24E51 /* VeraTextLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F015F31B964F7900F24E51 /* VeraTextLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25F015F81B964F7900F24E51 /* VeraTextLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */; };
 		25F015F91B964F7900F24E51 /* VeraTextLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25F016001B9650A400F24E51 /* NSDataSwizzleWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F015FE1B9650A400F24E51 /* NSDataSwizzleWrite.h */; settings = {ASSET_TAGS = (); }; };
 		25F016011B9650A400F24E51 /* NSDataSwizzleWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015FF1B9650A400F24E51 /* NSDataSwizzleWrite.m */; settings = {ASSET_TAGS = (); }; };
+		25F016061B9677DC00F24E51 /* VeraTextLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */; };
+		25F016091B96C18300F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F0160A1B96C18700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F016121B96C72200F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016111B96C72200F24E51 /* main.m */; };
+		25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F016181B96CB5100F24E51 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 25F016171B96CB5100F24E51 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,15 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25F0160D1B96C72200F24E51 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +72,11 @@
 		25F015F51B964F7900F24E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F015FE1B9650A400F24E51 /* NSDataSwizzleWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataSwizzleWrite.h; sourceTree = "<group>"; };
 		25F015FF1B9650A400F24E51 /* NSDataSwizzleWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataSwizzleWrite.m; sourceTree = "<group>"; };
+		25F016071B96C18300F24E51 /* EncryptDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptDecrypt.h; sourceTree = "<group>"; };
+		25F016081B96C18300F24E51 /* EncryptDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptDecrypt.m; sourceTree = "<group>"; };
+		25F0160F1B96C72200F24E51 /* VeraDecrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VeraDecrypt; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F016111B96C72200F24E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25F016171B96CB5100F24E51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +84,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F015F81B964F7900F24E51 /* VeraTextLib.framework in Frameworks */,
+				25F016061B9677DC00F24E51 /* VeraTextLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		25F015ED1B964F7900F24E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F0160C1B96C72200F24E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +108,10 @@
 		25F015CC1B964F3300F24E51 = {
 			isa = PBXGroup;
 			children = (
+				25F016171B96CB5100F24E51 /* README.md */,
 				25F015D71B964F3400F24E51 /* VeraText */,
 				25F015F21B964F7900F24E51 /* VeraTextLib */,
+				25F016101B96C72200F24E51 /* VeraDecrypt */,
 				25F015D61B964F3400F24E51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +121,7 @@
 			children = (
 				25F015D51B964F3400F24E51 /* VeraText.app */,
 				25F015F11B964F7900F24E51 /* VeraTextLib.framework */,
+				25F0160F1B96C72200F24E51 /* VeraDecrypt */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +133,8 @@
 				25F015D91B964F3400F24E51 /* AppDelegate.m */,
 				25F015DE1B964F3400F24E51 /* ViewController.h */,
 				25F015DF1B964F3400F24E51 /* ViewController.m */,
+				25F016071B96C18300F24E51 /* EncryptDecrypt.h */,
+				25F016081B96C18300F24E51 /* EncryptDecrypt.m */,
 				25F015E11B964F3400F24E51 /* Assets.xcassets */,
 				25F015E31B964F3400F24E51 /* Main.storyboard */,
 				25F015E61B964F3400F24E51 /* Info.plist */,
@@ -129,6 +160,14 @@
 				25F015F51B964F7900F24E51 /* Info.plist */,
 			);
 			path = VeraTextLib;
+			sourceTree = "<group>";
+		};
+		25F016101B96C72200F24E51 /* VeraDecrypt */ = {
+			isa = PBXGroup;
+			children = (
+				25F016111B96C72200F24E51 /* main.m */,
+			);
+			path = VeraDecrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +222,23 @@
 			productReference = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		25F0160E1B96C72200F24E51 /* VeraDecrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F016131B96C72200F24E51 /* Build configuration list for PBXNativeTarget "VeraDecrypt" */;
+			buildPhases = (
+				25F0160B1B96C72200F24E51 /* Sources */,
+				25F0160C1B96C72200F24E51 /* Frameworks */,
+				25F0160D1B96C72200F24E51 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeraDecrypt;
+			productName = VeraDecrypt;
+			productReference = 25F0160F1B96C72200F24E51 /* VeraDecrypt */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +252,9 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					25F015F01B964F7900F24E51 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					25F0160E1B96C72200F24E51 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -215,6 +274,7 @@
 			targets = (
 				25F015D41B964F3400F24E51 /* VeraText */,
 				25F015F01B964F7900F24E51 /* VeraTextLib */,
+				25F0160E1B96C72200F24E51 /* VeraDecrypt */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +305,9 @@
 			files = (
 				25F015E01B964F3400F24E51 /* ViewController.m in Sources */,
 				25F015DD1B964F3400F24E51 /* main.m in Sources */,
+				25F016181B96CB5100F24E51 /* README.md in Sources */,
 				25F015DA1B964F3400F24E51 /* AppDelegate.m in Sources */,
+				25F016091B96C18300F24E51 /* EncryptDecrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +316,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F016011B9650A400F24E51 /* NSDataSwizzleWrite.m in Sources */,
+				25F0160A1B96C18700F24E51 /* EncryptDecrypt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F0160B1B96C72200F24E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F016121B96C72200F24E51 /* main.m in Sources */,
+				25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +437,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myke.VeraText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -377,6 +453,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myke.VeraText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +504,20 @@
 			};
 			name = Release;
 		};
+		25F016141B96C72200F24E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25F016151B96C72200F24E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,12 +537,22 @@
 				25F015EB1B964F3400F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F015FA1B964F7900F24E51 /* Build configuration list for PBXNativeTarget "VeraTextLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25F015FB1B964F7900F24E51 /* Debug */,
 				25F015FC1B964F7900F24E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25F016131B96C72200F24E51 /* Build configuration list for PBXNativeTarget "VeraDecrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F016141B96C72200F24E51 /* Debug */,
+				25F016151B96C72200F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
