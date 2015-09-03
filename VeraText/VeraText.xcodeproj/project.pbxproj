@@ -31,17 +31,17 @@
 		25F015E51B964F3400F24E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E31B964F3400F24E51 /* Main.storyboard */; };
 		25F015F41B964F7900F24E51 /* VeraTextLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F015F31B964F7900F24E51 /* VeraTextLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F015F91B964F7900F24E51 /* VeraTextLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		25F016001B9650A400F24E51 /* NSDataSwizzleWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F015FE1B9650A400F24E51 /* NSDataSwizzleWrite.h */; settings = {ASSET_TAGS = (); }; };
-		25F016011B9650A400F24E51 /* NSDataSwizzleWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015FF1B9650A400F24E51 /* NSDataSwizzleWrite.m */; settings = {ASSET_TAGS = (); }; };
+		25F016001B9650A400F24E51 /* NSDataSwizzleWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F015FE1B9650A400F24E51 /* NSDataSwizzleWrite.h */; };
+		25F016011B9650A400F24E51 /* NSDataSwizzleWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015FF1B9650A400F24E51 /* NSDataSwizzleWrite.m */; };
 		25F016061B9677DC00F24E51 /* VeraTextLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F015F11B964F7900F24E51 /* VeraTextLib.framework */; };
-		25F016091B96C18300F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
-		25F0160A1B96C18700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F016091B96C18300F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; };
+		25F0160A1B96C18700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; };
 		25F016121B96C72200F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016111B96C72200F24E51 /* main.m */; };
-		25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F016161B96CA0700F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; };
 		25F0162B1B96DAA800F24E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015DF1B964F3400F24E51 /* ViewController.m */; };
 		25F0162C1B96DAA800F24E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015DC1B964F3400F24E51 /* main.m */; };
 		25F0162E1B96DAA800F24E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F015D91B964F3400F24E51 /* AppDelegate.m */; };
-		25F0162F1B96DAA800F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; settings = {ASSET_TAGS = (); }; };
+		25F0162F1B96DAA800F24E51 /* EncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F016081B96C18300F24E51 /* EncryptDecrypt.m */; };
 		25F016331B96DAA800F24E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E11B964F3400F24E51 /* Assets.xcassets */; };
 		25F016341B96DAA800F24E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F015E31B964F3400F24E51 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -509,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -546,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -723,6 +723,7 @@
 				25F016151B96C72200F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F0161A1B96CDDA00F24E51 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +732,7 @@
 				25F0161C1B96CDDA00F24E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F016371B96DAA800F24E51 /* Build configuration list for PBXNativeTarget "VeraText2" */ = {
 			isa = XCConfigurationList;

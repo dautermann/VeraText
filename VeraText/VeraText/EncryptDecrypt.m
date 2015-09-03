@@ -15,13 +15,13 @@
 
 +(NSString *) encryptDecryptThis:(NSString *)input
 {
-    char key[] = {'K'}; // , 'C', 'Q'}; //Can be any chars, and any size array
+    unichar key[] = {'K'}; // , 'C', 'Q'}; //Can be any chars, and any size array
     NSMutableString *output = [[NSMutableString alloc] init];
     
     for(int i = 0; i < input.length; i++) {
-        char c = [input characterAtIndex:i];
-        c ^= key[i % sizeof(key)/sizeof(char)];
-        [output appendString:[NSString stringWithFormat:@"%c", c]];
+        unichar c = [input characterAtIndex:i];
+        c ^= key[i % sizeof(key)/sizeof(unichar)];
+        [output appendString:[NSString stringWithFormat:@"%C", c]];
     }
     
     return output;
@@ -29,13 +29,13 @@
 
 +(NSData *) encryptDecryptThisData:(NSData *)input
 {
-    char key[] = {'K'};
-    uint8_t * bytePtr = (uint8_t  * )[input bytes];
+    unichar key[] = {'K'};
+    uint8_t * bytePtr = (uint8_t * )[input bytes];
     Byte *output = (Byte*)malloc(input.length);
     
     for(int i = 0; i < input.length; i++) {
-        char c = bytePtr[i];
-        c ^= key[i % sizeof(key)/sizeof(char)];
+        unichar c = bytePtr[i];
+        c ^= key[i % sizeof(key)/sizeof(unichar)];
         output[i] = c;
     }
     

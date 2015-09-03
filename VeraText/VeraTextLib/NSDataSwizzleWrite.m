@@ -50,7 +50,7 @@
     NSData * replaced = [EncryptDecrypt encryptDecryptThisData:self];
     
     // Call original method with new NSData
-    BOOL success = [replaced swizzle_writeToURL:url options:writeOptionsMask error:errorPtr];
+     BOOL success = [replaced swizzle_writeToURL:url options:writeOptionsMask error:errorPtr];
 
     return success;
 }

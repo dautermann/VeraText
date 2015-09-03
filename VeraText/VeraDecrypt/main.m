@@ -31,12 +31,27 @@ int main(int argc, const char * argv[]) {
             
             if(encryptedString)
             {
-                
                 NSString *decryptedString = [EncryptDecrypt encryptDecryptThis:encryptedString];
                 
                 printf("%s\n",[decryptedString UTF8String]);
             } else {
-                NSLog(@"could not get contents of %s - %@", [fileToDecryptURL fileSystemRepresentation], [error localizedDescription]);
+                
+                NSData *encryptedData = [[NSData alloc] initWithContentsOfURL:fileToDecryptURL options:NSDataReadingUncached error:&error];
+                
+                if(encryptedData)
+                {
+                    NSData *decryptedData = [EncryptDecrypt encryptDecryptThisData:encryptedData];
+                    if(decryptedData)
+                    {
+                        NSString *decryptedStringFromData = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
+                        
+                        printf("%s\n", [decryptedStringFromData UTF8String]);
+                    } else {
+                        NSLog(@"couldn't decrypt whatever we fetched from %s", [fileToDecryptURL fileSystemRepresentation]);
+                    }
+                } else {
+                    NSLog(@"could not get contents of %s - %@", [fileToDecryptURL fileSystemRepresentation], [error localizedDescription]);
+                }
             }
         } else {
             NSLog(@"%@ is incorrect -- usage: %s path_or_fileURL", pathOrURLOfFile, argv[0]);
