@@ -40,6 +40,7 @@
     }
     
     NSData *outputData = [[NSData alloc] initWithBytes:output length:input.length];
+    free(output); // don't forget to free what you malloc
     return outputData;
 }
 
