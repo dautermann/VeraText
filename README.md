@@ -66,6 +66,8 @@ note:  if anything gets messed up with the "optool", trash the app and rebuild e
 
 3. Also, we need to recodesign all apps that we modify, so that's a significant issue going forward.
 
-## More information on Swizzling can be found in this [NSHipster post](http://nshipster.com/method-swizzling/) that I found helpful
+## More information...
+
+... for Swizzling can be found in this [NSHipster post](http://nshipster.com/method-swizzling/) that I found helpful
 
 
