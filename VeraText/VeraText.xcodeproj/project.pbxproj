@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -341,10 +341,11 @@
 				};
 			};
 			buildConfigurationList = 25F015D01B964F3300F24E51 /* Build configuration list for PBXProject "VeraText" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -559,6 +560,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -575,6 +577,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -661,6 +664,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/VeraText2Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -677,6 +681,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VeraText/VeraText2Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
